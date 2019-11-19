@@ -1,34 +1,6 @@
 var express = require('express');
 const router = express.Router();
 var mongoose = require('mongoose');
-// var multer = require('multer');
-
-// const storage = multer.diskStorage({
-//     destination: function (request, file, cb) {
-//         cb(null, './uploads/');
-//     },
-//     filename: function(request, file, cb) {
-//         cb(null, new Date().toISOString() + file.originalname);
-//     }
-// });
-
-// const fileFilter = (request, file, cb) => {
-//     if(file.mimetype === 'image/jpg' || file.mimetype === 'image/png') {
-//         //accept a file
-//         cb(null, false);
-//     } else {
-//         //reject a file
-//         cb(null, true);
-//     }
-// };
-
-// const upload = multer({
-//     storage: storage, 
-//     limits:{ 
-//         fileSize: 1024 * 1024 * 5 
-//     },
-//     fileFilter: fileFilter
-// });
 
 
 const Product = require('../models/product');
